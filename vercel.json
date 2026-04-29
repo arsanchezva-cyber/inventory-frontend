@@ -1,11 +1,11 @@
 {
     "buildCommand": "npm run build",
-    "outputDirectory": "dist/frontend",
+    "outputDirectory": "dist/frontend/browser",
     "installCommand": "npm install --legacy-peer-deps",
-    "rewrites": [
+    "routes": [
         {
-            "source": "**",
-            "destination": "/index.html"
+            "src": "/(.*)",
+            "dest": "/index.html"
         }
     ]
 }
