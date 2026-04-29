@@ -2,16 +2,16 @@
   "name": "frontend-inventory-app",
   "version": "0.0.0",
   "scripts": {
-    "ng": "npx ng",
-    "start": "npx ng serve",
-    "build": "npx ng build --configuration=production",
-    "watch": "npx ng build --watch --configuration development",
-    "test": "npx ng test"
+    "ng": "node --max-old-space-size=4096 node_modules/@angular/cli/bin/ng",
+    "start": "node --max-old-space-size=4096 node_modules/@angular/cli/bin/ng serve",
+    "build": "node --max-old-space-size=4096 node_modules/@angular/cli/bin/ng build --configuration=production",
+    "watch": "node --max-old-space-size=4096 node_modules/@angular/cli/bin/ng build --watch --configuration development",
+    "test": "node --max-old-space-size=4096 node_modules/@angular/cli/bin/ng test"
   },
   "private": true,
   "engines": {
-    "node": "18.x",
-    "npm": "9.x"
+    "node": "24.x",
+    "npm": "10.x"
   },
   "dependencies": {
     "@angular/common": "^19.2.0",
