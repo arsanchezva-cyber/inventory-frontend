@@ -2,11 +2,11 @@
   "name": "frontend",
   "version": "0.0.0",
   "scripts": {
-    "ng": "node --max-old-space-size=4096 node_modules/@angular/cli/bin/ng",
-    "start": "node --max-old-space-size=4096 node_modules/@angular/cli/bin/ng serve",
-    "build": "node --max-old-space-size=4096 node_modules/@angular/cli/bin/ng build --configuration=production",
-    "watch": "node --max-old-space-size=4096 node_modules/@angular/cli/bin/ng build --watch --configuration development",
-    "test": "node --max-old-space-size=4096 node_modules/@angular/cli/bin/ng test"
+    "ng": "npx ng",
+    "start": "npx ng serve",
+    "build": "npx ng build --configuration=production",
+    "watch": "npx ng build --watch --configuration development",
+    "test": "npx ng test"
   },
   "private": true,
   "engines": {
