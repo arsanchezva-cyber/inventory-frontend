@@ -1,8 +1,8 @@
 {
     "version": 2,
-    "buildCommand": "ng build --configuration=production",
+    "buildCommand": "npx ng build --configuration=production",
     "outputDirectory": "dist/frontend",
-    "installCommand": "npm install",
+    "installCommand": "npm install --legacy-peer-deps",
     "framework": "angular",
     "routes": [
         {
