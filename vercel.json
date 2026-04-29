@@ -1,13 +1,7 @@
 {
     "version": 2,
-    "buildCommand": "npm run build",
+    "buildCommand": "npm install --legacy-peer-deps && npx --yes @angular/cli build --configuration=production",
     "outputDirectory": "dist/frontend",
     "installCommand": "npm install --legacy-peer-deps",
-    "framework": "angular",
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/index.html"
-        }
-    ]
+    "framework": null
 }
