@@ -1,7 +1,7 @@
 {
     "version": 2,
     "buildCommand": "ng build --configuration=production",
-    "outputDirectory": "dist/frontend-inventory-app",
+    "outputDirectory": "dist/frontend",
     "installCommand": "npm install",
     "framework": "angular",
     "routes": [
