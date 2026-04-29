@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "buildCommand": "npx ng build --configuration=production",
+    "buildCommand": "npm run build",
     "outputDirectory": "dist/frontend",
     "installCommand": "npm install --legacy-peer-deps",
     "framework": "angular",
