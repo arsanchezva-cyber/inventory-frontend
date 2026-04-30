@@ -4,13 +4,13 @@ import { Observable, BehaviorSubject } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { User, LoginCredentials, RegisterData, AuthResponse } from '../models/user.model';
 import { Router } from '@angular/router';
-import { environment } from '../../environments/environment';
 
 @Injectable({
     providedIn: 'root'
 })
 export class AuthService {
-    private apiUrl = `${environment.apiUrl}/auth`;
+    // URL de producción en Render - CAMBIADA DIRECTAMENTE
+    private apiUrl = 'https://inventory-backend-moj2.onrender.com/api/auth';
     private currentUserSubject: BehaviorSubject<User | null>;
     public currentUser: Observable<User | null>;
     private isAuthenticatedSubject: BehaviorSubject<boolean>;

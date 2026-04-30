@@ -8,7 +8,7 @@ import { CartItem, CartResponse } from '../models/cart.model';
     providedIn: 'root'
 })
 export class CartService {
-    private apiUrl = 'http://localhost:3000/api/cart';
+    private apiUrl = 'https://inventory-backend-moj2.onrender.com/api/cart';
     private cartCountSubject: BehaviorSubject<number> = new BehaviorSubject<number>(0);
     public cartCount$ = this.cartCountSubject.asObservable();
 
